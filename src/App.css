@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+#root {
+  margin: 0 auto;
+  text-align: center;
+}
+
+@layer base {
+  *, *::before, *::after {
+    @apply box-border
+  }
+
+  html, body {
+    @apply h-full
+  }
+
+  html {
+    @apply font-['Space_Mono'] font-bold text-base text-grayish-cyan
+  }
+
+  body {
+    @apply leading-6 antialiased
+  }
+
+  img, picture , video, canvas, svg {
+    @apply block w-full
+  }
+
+  .tip-btn {
+    @apply bg-very-dark-cyan text-white hover:bg-strong-cyan hover:text-very-dark-cyan
+  }
+
+  .active {
+    @apply bg-strong-cyan text-very-dark-cyan
+  }
+}
